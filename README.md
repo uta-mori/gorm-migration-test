@@ -1,11 +1,11 @@
 # gorm検証
 
-## TODO
+## 結果
 
 マイグレーション機能の検証
 
-- [x] drop tableでテーブルが削除されるか
-- [x] drop collumで列が削除されるか
+- [x] drop tableでテーブルが削除されるか = OK
+- [x] drop collumで列が削除されるか     = OK
 
 ```go
 	// カラム名の変更
