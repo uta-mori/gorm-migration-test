@@ -1,0 +1,24 @@
+version: "3.8"
+services:
+  gorm-test:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+      target: debug
+    volumes:
+      - .:/app
+    ports:
+      - "9000:9000"
+    tty: true
+    env_file: .env.example
+  db:
+    image: postgres:12.3-alpine
+    container_name: gorm-db-test
+    ports:
+      - "5432:5432"
+    environment:
+      TZ: "Asia/Tokyo"
+      LANG: ja_JP.utf8
+      POSTGRES_USER: test
+      POSTGRES_PASSWORD: test
+      POSTGRES_DB: test
