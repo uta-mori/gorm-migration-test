@@ -4,8 +4,8 @@
 
 マイグレーション機能の検証
 
-- drop tableでテーブルが削除されるか
-- drop collumで列が削除されるか
+[] drop tableでテーブルが削除されるか
+[] drop collumで列が削除されるか
 
 ```go
 	// カラム名の変更
