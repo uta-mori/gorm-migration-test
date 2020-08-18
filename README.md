@@ -26,3 +26,11 @@
 	[24.685ms] [rows:0] DROP TABLE IF EXISTS "products" CASCADE
 	*/
 ```
+
+## DB確認方法
+
+`make up`
+
+`make db-in`
+
+`psql -U test`
